@@ -263,7 +263,6 @@ a {
   top: 40px;
   left: -275px;
   width: 275px;
-  padding: 0 0 0 20px;
   justify-content: space-between;
   height: calc(100% - 40px);
   transition: 0.5s;
@@ -273,12 +272,22 @@ a {
   left: 0;
 }
 .hideMenu__ul_l1 {
-  padding: 10px;
   width: 100%;
 }
 .hideMenu__li_l1 {
+  background: #4b4b4b;
   list-style-type: none;
-  padding: 12px 0;
+  padding: 12px 0 12px 30px;
+  position: relative;
+}
+.hideMenu__li_l1:not(:last-child)::after {
+  content: '';
+  width: 90%;
+  height: 2px;
+  background: #696868;
+  position: absolute;
+  left: 5%;
+  bottom: -1px;
 }
 .hideMenu__a_l1 {
   color: white;
@@ -346,8 +355,8 @@ a {
 .points {
   position: absolute;
   opacity: 0.2;
-  width: 25px;
-  right: -25px;
+  width: 35px;
+  right: -34px;
   top: calc(50% - 48px);
   background-color: #3a3a3a;
   border-left: 1px solid #313131;
@@ -369,7 +378,7 @@ a {
   width: 15px;
   height: 15px;
   background: #4b4b4b;
-  margin: 5px 0 5px 3px;
+  margin: 5px 0 5px 8px;
   border-radius: 15px;
   border: 1px solid #313131;
 }
