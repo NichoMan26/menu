@@ -21,9 +21,7 @@ body {
     min-height: 100vh;
 }
 
-.test {
-    background: #000;
-}
+.test {}
 
 a {
     cursor: pointer;
@@ -39,7 +37,7 @@ a {
     position: fixed;
 
     &__div_l1 {
-        padding: 0 15px;
+        padding: 0 5px;
         background-color: #262626;
         height: 40px;
     }
@@ -70,7 +68,12 @@ a {
             position: fixed;
             left: calc(50% - 17px);
             top: 0;
+
         }
+    }
+
+    &__a {
+        width: 29px;
     }
 
     &__li:last-child {
@@ -129,9 +132,9 @@ a {
     &__ul {
         display: none;
         position: absolute;
-        left: 0;
+        left: 3px;
         width: 40px;
-        top: 37px;
+        top: 36px;
         background-color: #262626;
 
         &-active {
@@ -151,7 +154,7 @@ a {
         height: 40px;
         display: inline-block;
         line-height: 40px;
-        padding: 0 0 0 10px;
+        padding: 2px 0 0 10px;
         text-align: left;
         position: relative;
     }
@@ -220,7 +223,6 @@ a {
     left: -275px;
     width: 275px;
     padding: 0 0 0 20px;
-    display: flex;
     justify-content: space-between;
     height: calc(100% - 40px);
     transition: 0.5s;
@@ -232,6 +234,7 @@ a {
 
     &__ul_l1 {
         padding: 10px;
+        width: 100%;
     }
 
     &__li_l1 {
@@ -250,11 +253,6 @@ a {
     &__a_triangle {
         padding: 0 10px;
         transition: 0.5s;
-
-        &-active {
-            transform: rotate(90deg);
-        }
-
     }
 
     &__i_triangle {
@@ -286,6 +284,38 @@ a {
         font-weight: 400;
 
     }
+    &__ul_footer{
+        height: 50px;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 275px;
+       background: #4b4b4b;;
+       display: flex;
+       justify-content: space-between;
+    }
+    &__li_footer{
+        list-style-type: none;
+        display: inline-block;
+        width: 33%;
+        position: relative;
+        &:not(:last-child):after{
+            content: '';
+            position: absolute;
+            height: 36px;
+            width: 2px;
+            right: -1px;
+            top: 7px;
+            background: #696868;       
+        }
+    }
+    &__a_footer{
+width: 100%;
+height: 100%;
+display: block;
+text-align: center;
+line-height: 61px;
+    }
 }
 
 .points {
@@ -293,21 +323,24 @@ a {
     opacity: 0.2;
     width: 25px;
     right: -25px;
-    top: calc(50% - 43px);
+    top: calc(50% - 48px);
     background-color: #3a3a3a;
     border-left: 1px solid #313131;
     border-radius: 0 15px 15px 0;
     transition: 0.5s;
-    &-active{
+
+    &-active {
         opacity: 1;
     }
-    &__ul{
+
+    &__ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         padding: 10px 0;
     }
+
     &__li {
         list-style-type: none;
         width: 15px;
