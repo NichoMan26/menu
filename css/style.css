@@ -132,6 +132,7 @@ a {
   background-color: #262626;
   display: block;
   list-style-type: none;
+  height: 40px;
   position: relative;
   padding: 0 5px;
   cursor: pointer;
@@ -267,6 +268,9 @@ a {
   height: 3px;
   width: 100%;
   background: cornsilk;
+}
+.burger__div_wrapper {
+  padding: 9px 0;
 }
 .hideMenu {
   position: fixed;
