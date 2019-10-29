@@ -28,7 +28,7 @@ let nav = `<nav class="menu"><ul class="menu__ul">
     <div/>
 </li>
 <li class="menu__li userIcon">
-<i class="far fa-comment-dots fa-2x white"></i>
+<i class="far fa-bell fa-2x white"></i>
 <span class="userIcon__span_around userIcon__span_around-unit">11</span>
 <ul class='userIcon__ul'>
 <li class="userIcon__li">
@@ -117,13 +117,76 @@ let hideMenu = `<div class='hideMenu'>
 </ul>
 <ul class='hideMenu__ul_footer'>
     <li class='hideMenu__li_footer'>
-            <i class="fas fa-cog white fa-lg"></i>
-            <span class='hideMenu__span_conf'>Konfiguration</span>
-            <div class='configuration'>
-                <ul class='configuration__ul'>
-                    <li class='configuration__li'></li>
-                </ul>
+    <a class ='hideMenu__a_footer'>
+        <i class="fas fa-cog white fa-lg hideMenu__i_cogwhell"></i>
+        <span class='hideMenu__span_conf'>Konfiguration</span>
+    </a>
+            
+    <div class='configuration'>
+        <div class='configuration__div_content'>
+        <div class="configuration__div_byList">
+                <h3 class='configuration__h3'>Android</h3>
+                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
             </div>
+        </div>
+        <ul class='configuration__ul'>
+            <li class='configuration__li configuration__li-active'>
+            <i class="fab fa-android white fa-lg"></i>
+            <div class="configuration__div_byList displayNone">
+                <h3 class='configuration__h3'>Android</h3>
+                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
+            </div>
+            </li>
+            <li class='configuration__li'>
+            <i class="fas fa-adjust white fa-lg"></i>
+            <div class="configuration__div_byList displayNone">
+                <h3 class='configuration__h3'>Color</h3>
+                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
+            </div>
+            </li>
+            <li class='configuration__li'>
+            <i class="fab fa-bluetooth white fa-lg"></i>
+            <div class="configuration__div_byList displayNone">
+                <h3 class='configuration__h3'>Bluetooth</h3>
+                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
+             </div>
+            </li>
+            <li class='configuration__li'>
+                <i class="fas fa-exclamation-triangle white fa-lg"></i>
+                <div class="configuration__div_byList displayNone">
+                <h3 class='configuration__h3'>Warning</h3>
+                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
+             </div>
+            </li>
+            <li class='configuration__li'>
+                <i class="fas fa-car-battery white fa-lg"></i>
+                <div class="configuration__div_byList displayNone">
+                    <h3 class='configuration__h3'>Battery</h3>
+                    <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
+                </div>
+            </li>
+            <li class='configuration__li'>
+            <i class="fas fa-camera white fa-lg"></i>
+            <div class="configuration__div_byList displayNone">
+                <h3 class='configuration__h3'>Camera</h3>
+                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
+             </div>
+            </li>
+            <li class='configuration__li'>
+            <i class="fas fa-code-branch white fa-lg"></i>
+            <div class="configuration__div_byList displayNone">
+                <h3 class='configuration__h3'>Git</h3>
+                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
+             </div>
+            </li>
+            <li class='configuration__li'>
+                <i class="fas fa-car-alt white fa-lg"></i>
+                <div class="configuration__div_byList displayNone">
+                <h3 class='configuration__h3'>Car</h3>
+                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
+             </div>
+            </li>
+        </ul>
     </li>    
 </ul>
 </li>
@@ -170,17 +233,16 @@ $('.hideMenu__li_l1').on('touchend', (e) => {
         .children('.hideMenu__i_triangle')
         .toggleClass('hideMenu__i_triangle-active')
 })
-var lastX;
-let firstTouch;
+let firstTouchMenu;
 $('.hideMenu').on('touchstart', (e) => {
-    firstTouch = e.originalEvent.touches[0].clientX
+    firstTouchMenu = e.originalEvent.touches[0].clientX
 })
 $('.hideMenu').on('touchmove', (e) => {
+    console.log('hde meny mive')
     var currentX = e.originalEvent.touches[0].clientX;
-    if ((firstTouch - currentX) > 50) {
-        toggleHideMenu()
+    if ((firstTouchMenu - currentX) > 50) {
+        hideHideMenu()
     }
-    lastX = currentX;
 })
 $('.points').on('touchstart', (e) => {
     toggleHideMenu()
@@ -203,7 +265,7 @@ $('.userIcon').on('touchend', (e) => {
     }
 
 })
-$('body').on('touchend', (e) => {
+$('body').on('touchstart', (e) => {
     console.log('touch body')
     let arrTouch = e.originalEvent.path;
     let change = 0;
@@ -213,42 +275,59 @@ $('body').on('touchend', (e) => {
         }
     })
     if (change === 0) {
-        hideAll()
-        
+        hideAll()   
     }
 })
-$('.content').on('touchmove', (e) => {
-console.log(e)
-showHideMenu()
 
-})
-
-let firstTouchOpen;
+let firstTouch;
 $('.content').on('touchstart', (e) => {
-    firstTouchOpen = e.originalEvent.touches[0].clientX
+    firstTouch = e.originalEvent.touches[0].clientX
 })
 $('.content').on('touchmove', (e) => {
     var currentX = e.originalEvent.touches[0].clientX;
-    console.log(firstTouchOpen)
-    console.log(currentX)
-    if ((firstTouchOpen + 100) > currentX) {
-        toggleHideMenu()
+    if ((firstTouch + 50) < currentX) {
+        console.log('show hidemenu')
+        showHideMenu()
+    } else if((firstTouch - 50) > currentX){
+        console.log('hide hidemenu')
+        hideHideMenu()
     }
+})
+$('.hideMenu__a_footer').on('touchend', (e) => {
+    $('.hideMenu__ul_footer').toggleClass('hideMenu__ul_footer-active')
+})
+$('.configuration__li').on('touchend', (e) => {
+    $('.configuration__li-active').removeClass('configuration__li-active');
+    $(e.currentTarget).addClass('configuration__li-active')
+    let configDivContent = $('.configuration__div_content');
+    configDivContent.children('div').remove()
+    $(e.currentTarget).children('.configuration__div_byList').clone().appendTo(configDivContent);
+    configDivContent
+    configDivContent.children('div').removeClass('displayNone')
+    
+
 })
 
 function hideAll() {
+    console.log('function', 'hideAll')
     $('.hideMenu-active').removeClass('hideMenu-active')
     $('#nav-icon2').removeClass('open');
     $('.points').removeClass('points-active')
     $('.menu__div-active').removeClass('menu__div-active')
     $('.newMessage-active').removeClass('newMessage-active')
     $('.userIcon__ul-active').removeClass('userIcon__ul-active')
+    
 }
 
 function toggleHideMenu() {
     $('#nav-icon2').toggleClass('open');
     $('.hideMenu').toggleClass('hideMenu-active')
     $('.points').toggleClass('points-active')
+}
+function hideHideMenu() {
+    $('#nav-icon2').removeClass('open');
+    $('.hideMenu').removeClass('hideMenu-active')
+    $('.points').removeClass('points-active')
 }
 function showHideMenu() {
     $('#nav-icon2').addClass('open');
