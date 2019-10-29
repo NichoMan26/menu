@@ -205,6 +205,7 @@ $('.userIcon').on('touchend', (e) => {
 
 })
 $('body').on('touchend', (e) => {
+    console.log('touch body')
     let arrTouch = e.originalEvent.path;
     let change = 0;
     $.each(arrTouch, (index, value) => {
@@ -214,13 +215,32 @@ $('body').on('touchend', (e) => {
     })
     if (change === 0) {
         hideAll()
+        
+    }
+})
+$('.content').on('touchmove', (e) => {
+console.log(e)
+showHideMenu()
+
+})
+
+let firstTouchOpen;
+$('.content').on('touchstart', (e) => {
+    firstTouchOpen = e.originalEvent.touches[0].clientX
+})
+$('.content').on('touchmove', (e) => {
+    var currentX = e.originalEvent.touches[0].clientX;
+    console.log(firstTouchOpen)
+    console.log(currentX)
+    if ((firstTouchOpen + 100) > currentX) {
+        toggleHideMenu()
     }
 })
 
 function hideAll() {
-    $('.hideMenu-active').removeClass('hideMenu-active')
-    $('#nav-icon2').removeClass('open');
-    $('.points').removeClass('points-active')
+    // $('.hideMenu-active').removeClass('hideMenu-active')
+    // $('#nav-icon2').removeClass('open');
+    // $('.points').removeClass('points-active')
     $('.menu__div-active').removeClass('menu__div-active')
     $('.newMessage-active').removeClass('newMessage-active')
     $('.userIcon__ul-active').removeClass('userIcon__ul-active')
@@ -230,4 +250,9 @@ function toggleHideMenu() {
     $('#nav-icon2').toggleClass('open');
     $('.hideMenu').toggleClass('hideMenu-active')
     $('.points').toggleClass('points-active')
+}
+function showHideMenu() {
+    $('#nav-icon2').addClass('open');
+    $('.hideMenu').addClass('hideMenu-active')
+    $('.points').addClass('points-active')
 }
