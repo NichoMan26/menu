@@ -28,16 +28,16 @@ let nav = `<nav class="menu"><ul class="menu__ul">
     <div/>
 </li>
 <li class="menu__li userIcon">
-<i class="far fa-comment-dots white fa-2x"></i>
-<span class="userIcon__span_around">10</span>
+<i class="far fa-comment-dots userIcon__i white fa-2x"></i>
+<span class="userIcon__span_around userIcon__span_around-unit">10</span>
 <ul class='userIcon__ul'>
     <li class="userIcon__li">
-        <a class='userIcon__a'><i class="fas fa-calendar fa-lg white"></i></a>
+        <a class='userIcon__a'><i class="fas fa-calendar fa-2x white"></i></a>
         <span class="userIcon__span_around">3</span>
     </li>
     <li class="userIcon__li">
         <a class='userIcon__a userIcon__a_message'>
-            <i class="fas fa-envelope fa-lg white"></i>
+            <i class="fas fa-envelope fa-2x white"></i>
             <span class="userIcon__span_around">2</span>
         </a>
         <div class='userIcon__div newMessage'>
@@ -49,7 +49,7 @@ let nav = `<nav class="menu"><ul class="menu__ul">
         </div>
     </li>
     <li class="userIcon__li">
-        <a class='userIcon__a'><i class="fas fa-user fa-lg white"></i></a>
+        <a class='userIcon__a'><i class="fas fa-user fa-2x white"></i></a>
         <span class="userIcon__span_around">5</span>
     </li>
     </ul>

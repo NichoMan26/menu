@@ -183,29 +183,35 @@ a {
 }
 .userIcon {
   position: relative;
+  width: 55px;
+  height: 100%;
+  text-align: center;
+}
+.userIcon__i {
+  margin: 3px 0 0 0;
 }
 .userIcon__ul {
   display: none;
   position: absolute;
-  left: 3px;
-  width: 40px;
-  top: 36px;
+  left: 5px;
+  width: 55px;
+  top: 40px;
   background-color: #262626;
 }
 .userIcon__ul-active {
   display: block;
 }
 .userIcon__li {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   display: inline-block;
   position: relative;
 }
 .userIcon__a {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   display: inline-block;
-  line-height: 40px;
+  line-height: 55px;
   padding: 2px 0 0 10px;
   text-align: left;
   position: relative;
@@ -221,8 +227,12 @@ a {
   text-align: center;
   color: white;
   font-size: 12px;
-  right: 3px;
-  bottom: 3px;
+  right: 5px;
+  bottom: 8px;
+}
+.userIcon__span_around-unit {
+  right: -1px;
+  bottom: 6px;
 }
 .newMessage {
   display: none;
