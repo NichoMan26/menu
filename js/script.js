@@ -28,14 +28,10 @@ let nav = `<nav class="menu"><ul class="menu__ul">
     <div/>
 </li>
 <li class="menu__li userIcon">
-<i class="far fa-comment-dots userIcon__i white fa-2x"></i>
-<span class="userIcon__span_around userIcon__span_around-unit">10</span>
+<i class="far fa-comment-dots fa-2x white"></i>
+<span class="userIcon__span_around userIcon__span_around-unit">11</span>
 <ul class='userIcon__ul'>
-    <li class="userIcon__li">
-        <a class='userIcon__a'><i class="fas fa-calendar fa-2x white"></i></a>
-        <span class="userIcon__span_around">3</span>
-    </li>
-    <li class="userIcon__li">
+<li class="userIcon__li">
         <a class='userIcon__a userIcon__a_message'>
             <i class="fas fa-envelope fa-2x white"></i>
             <span class="userIcon__span_around">2</span>
@@ -48,6 +44,15 @@ let nav = `<nav class="menu"><ul class="menu__ul">
             </ul>
         </div>
     </li>
+    <li class="userIcon__li">
+        <a class='userIcon__a'><i class="fas fa-calendar fa-2x white"></i></a>
+        <span class="userIcon__span_around">3</span>
+    </li>
+    <li class="userIcon__li">
+        <a class='userIcon__a'><i class="far fa-list-alt fa-2x white"></i></a>
+        <span class="userIcon__span_around">1</span>
+    </li>
+    
     <li class="userIcon__li">
         <a class='userIcon__a'><i class="fas fa-user fa-2x white"></i></a>
         <span class="userIcon__span_around">5</span>
@@ -112,20 +117,14 @@ let hideMenu = `<div class='hideMenu'>
 </ul>
 <ul class='hideMenu__ul_footer'>
     <li class='hideMenu__li_footer'>
-        <a class='hideMenu__a_footer'>
-            <i class="fas fa-cog white fa-2x"></i>
-        </a>
-    </li>
-    <li class='hideMenu__li_footer'>
-        <a class='hideMenu__a_footer'>
-        <i class="fab fa-bitcoin white fa-2x"></i>
-        </a>
-    </li>
-    <li class='hideMenu__li_footer'>
-        <a class='hideMenu__a_footer'>
-        <i class="fas fa-cat white fa-2x"></i>
-        </a>
-    </li>
+            <i class="fas fa-cog white fa-lg"></i>
+            <span class='hideMenu__span_conf'>Konfiguration</span>
+            <div class='configuration'>
+                <ul class='configuration__ul'>
+                    <li class='configuration__li'></li>
+                </ul>
+            </div>
+    </li>    
 </ul>
 </li>
 <div class='points'>
@@ -238,9 +237,9 @@ $('.content').on('touchmove', (e) => {
 })
 
 function hideAll() {
-    // $('.hideMenu-active').removeClass('hideMenu-active')
-    // $('#nav-icon2').removeClass('open');
-    // $('.points').removeClass('points-active')
+    $('.hideMenu-active').removeClass('hideMenu-active')
+    $('#nav-icon2').removeClass('open');
+    $('.points').removeClass('points-active')
     $('.menu__div-active').removeClass('menu__div-active')
     $('.newMessage-active').removeClass('newMessage-active')
     $('.userIcon__ul-active').removeClass('userIcon__ul-active')
