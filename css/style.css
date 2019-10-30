@@ -151,6 +151,10 @@ a {
 .userIcon__span_around-unit {
   right: -1px;
   bottom: 6px;
+  display: none;
+}
+.userIcon__span_around-unit-active {
+  display: block;
 }
 .newMessage {
   display: none;
@@ -346,6 +350,11 @@ h2 {
 }
 .configuration__li-active {
   background: #363636;
+}
+.configuration__li_content {
+  color: white;
+  padding: 0 0 0 15px;
+  list-style-type: none;
 }
 .configuration__div_content {
   background: #363636;

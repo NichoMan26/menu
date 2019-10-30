@@ -29,7 +29,7 @@ let nav = `<nav class="menu"><ul class="menu__ul">
 </li>
 <li class="menu__li userIcon">
 <i class="far fa-bell fa-2x white"></i>
-<span class="userIcon__span_around userIcon__span_around-unit">11</span>
+<span class="userIcon__span_around userIcon__span_around-unit userIcon__span_around-unit-active">11</span>
 <ul class='userIcon__ul'>
 <li class="userIcon__li">
         <a class='userIcon__a userIcon__a_message'>
@@ -123,70 +123,115 @@ let hideMenu = `<div class='hideMenu'>
     </a>
             
     <div class='configuration'>
-        <div class='configuration__div_content'>
-        <div class="configuration__div_byList">
-                <h3 class='configuration__h3'>Android</h3>
-                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
-            </div>
-        </div>
         <ul class='configuration__ul'>
             <li class='configuration__li configuration__li-active'>
             <i class="fab fa-android white fa-lg"></i>
             <div class="configuration__div_byList displayNone">
-                <h3 class='configuration__h3'>Android</h3>
-                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
+                <ul class='configuration__ul_content'>
+                    <li class='configuration__li_content'>link-1-1</li>
+                    <li class='configuration__li_content'>link-1-2</li>
+                    <li class='configuration__li_content'>link-1-3</li>
+                    <li class='configuration__li_content'>link-1-4</li>
+                    <li class='configuration__li_content'>link-1-5</li>
+                    <li class='configuration__li_content'>link-1-6</li>
+                    <li class='configuration__li_content'>link-1-7</li>
+                </ul>
             </div>
             </li>
             <li class='configuration__li'>
             <i class="fas fa-adjust white fa-lg"></i>
             <div class="configuration__div_byList displayNone">
-                <h3 class='configuration__h3'>Color</h3>
-                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
+                <ul class='configuration__ul_content'>
+                    <li class='configuration__li_content'>link-2-1</li>
+                    <li class='configuration__li_content'>link-2-2</li>
+                    <li class='configuration__li_content'>link-2-3</li>
+                </ul>
             </div>
             </li>
             <li class='configuration__li'>
             <i class="fab fa-bluetooth white fa-lg"></i>
             <div class="configuration__div_byList displayNone">
-                <h3 class='configuration__h3'>Bluetooth</h3>
-                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
-             </div>
+                <ul class='configuration__ul_content'>
+                    <li class='configuration__li_content'>link-3-1</li>
+                    <li class='configuration__li_content'>link-3-2</li>
+                    <li class='configuration__li_content'>link-3-3</li>
+                    <li class='configuration__li_content'>link-3-4</li>
+                    <li class='configuration__li_content'>link-3-5</li>
+                    <li class='configuration__li_content'>link-3-6</li>
+                    <li class='configuration__li_content'>link-3-6</li>
+                    <li class='configuration__li_content'>link-3-6</li>
+                    <li class='configuration__li_content'>link-3-7</li>
+                </ul>
+            </div>
             </li>
             <li class='configuration__li'>
                 <i class="fas fa-exclamation-triangle white fa-lg"></i>
                 <div class="configuration__div_byList displayNone">
-                <h3 class='configuration__h3'>Warning</h3>
-                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
-             </div>
+                <ul class='configuration__ul_content'>
+                    <li class='configuration__li_content'>link-4-1</li>
+                    <li class='configuration__li_content'>link-4-2</li>
+                    <li class='configuration__li_content'>link-4-3</li>
+                </ul>
+            </div>
             </li>
             <li class='configuration__li'>
                 <i class="fas fa-car-battery white fa-lg"></i>
                 <div class="configuration__div_byList displayNone">
-                    <h3 class='configuration__h3'>Battery</h3>
-                    <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
-                </div>
+                <ul class='configuration__ul_content'>
+                    <li class='configuration__li_content'>link-5-1</li>
+                </ul>
+            </div>
             </li>
             <li class='configuration__li'>
             <i class="fas fa-camera white fa-lg"></i>
             <div class="configuration__div_byList displayNone">
-                <h3 class='configuration__h3'>Camera</h3>
-                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
-             </div>
+                <ul class='configuration__ul_content'>
+                    <li class='configuration__li_content'>link-6-1</li>
+                    <li class='configuration__li_content'>link-6-2</li>
+                    <li class='configuration__li_content'>link-6-3</li>
+                    <li class='configuration__li_content'>link-6-4</li>
+                    <li class='configuration__li_content'>link-6-5</li>
+                    <li class='configuration__li_content'>link-6-6</li>
+                    <li class='configuration__li_content'>link-6-7</li>
+                </ul>
+            </div>
             </li>
             <li class='configuration__li'>
             <i class="fas fa-code-branch white fa-lg"></i>
             <div class="configuration__div_byList displayNone">
-                <h3 class='configuration__h3'>Git</h3>
-                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
-             </div>
+                <ul class='configuration__ul_content'>
+                    <li class='configuration__li_content'>link-7-1</li>
+                    <li class='configuration__li_content'>link-7-2</li>
+                    <li class='configuration__li_content'>link-7-3</li>
+                </ul>
+            </div>
             </li>
             <li class='configuration__li'>
                 <i class="fas fa-car-alt white fa-lg"></i>
                 <div class="configuration__div_byList displayNone">
-                <h3 class='configuration__h3'>Car</h3>
-                <p class='configuration__p'>Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.Qui nisi amet excepteur anim in excepteur. Laboris laborum commodo non sit ad. Excepteur minim ea sit cupidatat id duis magna cillum ipsum labore velit voluptate cillum. Nulla ullamco deserunt Lorem incididunt.</p>
-             </div>
+                <ul class='configuration__ul_content'>
+                    <li class='configuration__li_content'>link-8-1</li>
+                    <li class='configuration__li_content'>link-8-2</li>
+                    <li class='configuration__li_content'>link-8-3</li>
+                    <li class='configuration__li_content'>link-8-4</li>
+                    <li class='configuration__li_content'>link-8-5</li>
+                </ul>
+            </div>
             </li>
         </ul>
+        <div class='configuration__div_content'>
+            <div class="configuration__div_byList">
+            <ul class='configuration__ul_content'>
+            <li class='configuration__li_content'>link-1-1</li>
+            <li class='configuration__li_content'>link-1-2</li>
+            <li class='configuration__li_content'>link-1-3</li>
+            <li class='configuration__li_content'>link-1-4</li>
+            <li class='configuration__li_content'>link-1-5</li>
+            <li class='configuration__li_content'>link-1-6</li>
+            <li class='configuration__li_content'>link-1-7</li>
+        </ul>
+            </div>
+        </div>
     </li>    
 </ul>
 </li>
@@ -233,17 +278,6 @@ $('.hideMenu__li_l1').on('touchend', (e) => {
         .children('.hideMenu__i_triangle')
         .toggleClass('hideMenu__i_triangle-active')
 })
-let firstTouchMenu;
-$('.hideMenu').on('touchstart', (e) => {
-    firstTouchMenu = e.originalEvent.touches[0].clientX
-})
-$('.hideMenu').on('touchmove', (e) => {
-    console.log('hde meny mive')
-    var currentX = e.originalEvent.touches[0].clientX;
-    if ((firstTouchMenu - currentX) > 50) {
-        hideHideMenu()
-    }
-})
 $('.points').on('touchstart', (e) => {
     toggleHideMenu()
 })
@@ -259,9 +293,12 @@ $('.userIcon__li').on('touchend', (e) => {
 $('.userIcon').on('touchend', (e) => {
     if ($('.userIcon__ul-active').length > 0) {
         $('.userIcon__ul-active').removeClass('userIcon__ul-active')
+        $(e.currentTarget).children('.userIcon__span_around-unit').addClass('userIcon__span_around-unit-active')
     } else {
         hideAll()
         $(e.currentTarget).children('.userIcon__ul').toggleClass('userIcon__ul-active')
+        $(e.currentTarget).children('.userIcon__span_around-unit').removeClass('userIcon__span_around-unit-active')
+        
     }
 
 })
@@ -282,14 +319,30 @@ $('body').on('touchstart', (e) => {
 let firstTouch;
 $('.content').on('touchstart', (e) => {
     firstTouch = e.originalEvent.touches[0].clientX
+    timeStart =  Date.now()
+    console.log(timeStart)
 })
 $('.content').on('touchmove', (e) => {
     var currentX = e.originalEvent.touches[0].clientX;
-    if ((firstTouch + 50) < currentX) {
+    let timeMove = Date.now();
+    if ((firstTouch + 80) < currentX && (timeStart + 500) > timeMove) {
         console.log('show hidemenu')
         showHideMenu()
-    } else if((firstTouch - 50) > currentX){
+    } else if((firstTouch - 80) > currentX){
         console.log('hide hidemenu')
+        hideHideMenu()
+    }
+})
+let firstTouchMenu;
+$('.hideMenu').on('touchstart', (e) => {
+    firstTouchMenu = e.originalEvent.touches[0].clientX
+    timeStart =  Date.now()
+})
+$('.hideMenu').on('touchmove', (e) => {
+    console.log('hde meny mive')
+    let timeMove = Date.now();
+    var currentX = e.originalEvent.touches[0].clientX;
+    if ((firstTouchMenu - currentX) > 50 && (timeStart + 500) > timeMove) {
         hideHideMenu()
     }
 })
@@ -316,6 +369,7 @@ function hideAll() {
     $('.menu__div-active').removeClass('menu__div-active')
     $('.newMessage-active').removeClass('newMessage-active')
     $('.userIcon__ul-active').removeClass('userIcon__ul-active')
+    $('.userIcon__span_around-unit').addClass('userIcon__span_around-unit-active')
     
 }
 
