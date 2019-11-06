@@ -256,7 +256,24 @@ $('.menu__li_logo').on('touchend', (e) => {
         divMenuCurrentLi.addClass('menu__div-active')
     }
 })
+$('.menu__li_logo').on('click', (e) => {
+    let divMenuCurrentLi = $(e.currentTarget).children('.menu__div');
+    if ($('.menu__div-active').length > 0) {
+        $('.menu__div-active').removeClass('menu__div-active')
+    } else {
+        hideAll()
+        divMenuCurrentLi.addClass('menu__div-active')
+    }
+})
 $('.burger').on('touchend', (e) => {
+    if ($('.hideMenu-active').length > 0) {
+        toggleHideMenu();
+    } else {
+        hideAll();
+        toggleHideMenu();
+    }
+})
+$('.burger').on('click', (e) => {
     if ($('.hideMenu-active').length > 0) {
         toggleHideMenu();
     } else {
@@ -278,10 +295,36 @@ $('.hideMenu__li_l1').on('touchend', (e) => {
         .children('.hideMenu__i_triangle')
         .toggleClass('hideMenu__i_triangle-active')
 })
+$('.hideMenu__li_l1').on('click', (e) => {
+    if ($(e.currentTarget).children('.hideMenu__div-active').length > 0) {
+        $('.hideMenu__div-active').removeClass('hideMenu__div-active');
+        $('.hideMenu__i_triangle-active').removeClass('hideMenu__i_triangle-active');
+        return
+    }
+    $('.hideMenu__div-active').removeClass('hideMenu__div-active');
+    $('.hideMenu__i_triangle-active').removeClass('hideMenu__i_triangle-active');
+    $(e.currentTarget).children('.hideMenu__div').toggleClass('hideMenu__div-active');
+    $(e.currentTarget).children('.hideMenu__p')
+        .children('.hideMenu__a_triangle')
+        .children('.hideMenu__i_triangle')
+        .toggleClass('hideMenu__i_triangle-active')
+})
 $('.points').on('touchstart', (e) => {
     toggleHideMenu()
 })
+$('.points').on('click', (e) => {
+    toggleHideMenu()
+})
 $('.userIcon__li').on('touchend', (e) => {
+    if ($('.newMessage-active').length > 0) {
+        $('.newMessage-active').removeClass('newMessage-active')
+    } else {
+        hideAll()
+        $(e.currentTarget).children('.newMessage').toggleClass('newMessage-active')
+    }
+
+})
+$('.userIcon__li').on('clcik', (e) => {
     if ($('.newMessage-active').length > 0) {
         $('.newMessage-active').removeClass('newMessage-active')
     } else {
@@ -302,7 +345,32 @@ $('.userIcon').on('touchend', (e) => {
     }
 
 })
+$('.userIcon').on('click', (e) => {
+    if ($('.userIcon__ul-active').length > 0) {
+        $('.userIcon__ul-active').removeClass('userIcon__ul-active')
+        $(e.currentTarget).children('.userIcon__span_around-unit').addClass('userIcon__span_around-unit-active')
+    } else {
+        hideAll()
+        $(e.currentTarget).children('.userIcon__ul').toggleClass('userIcon__ul-active')
+        $(e.currentTarget).children('.userIcon__span_around-unit').removeClass('userIcon__span_around-unit-active')
+        
+    }
+
+})
 $('body').on('touchstart', (e) => {
+    console.log('touch body')
+    let arrTouch = e.originalEvent.path;
+    let change = 0;
+    $.each(arrTouch, (index, value) => {
+        if ($(value).hasClass('menu__ul') || $(value).hasClass('hideMenu')) {
+            change++;
+        }
+    })
+    if (change === 0) {
+        hideAll()   
+    }
+})
+$('body').on('clcik', (e) => {
     console.log('touch body')
     let arrTouch = e.originalEvent.path;
     let change = 0;
@@ -338,6 +406,7 @@ $('.hideMenu').on('touchstart', (e) => {
     firstTouchMenu = e.originalEvent.touches[0].clientX
     timeStart =  Date.now()
 })
+
 $('.hideMenu').on('touchmove', (e) => {
     console.log('hde meny mive')
     let timeMove = Date.now();
@@ -349,6 +418,9 @@ $('.hideMenu').on('touchmove', (e) => {
 $('.hideMenu__a_footer').on('touchend', (e) => {
     $('.hideMenu__ul_footer').toggleClass('hideMenu__ul_footer-active')
 })
+$('.hideMenu__a_footer').on('click', (e) => {
+    $('.hideMenu__ul_footer').toggleClass('hideMenu__ul_footer-active')
+})
 $('.configuration__li').on('touchend', (e) => {
     $('.configuration__li-active').removeClass('configuration__li-active');
     $(e.currentTarget).addClass('configuration__li-active')
@@ -357,8 +429,15 @@ $('.configuration__li').on('touchend', (e) => {
     $(e.currentTarget).children('.configuration__div_byList').clone().appendTo(configDivContent);
     configDivContent
     configDivContent.children('div').removeClass('displayNone')
-    
-
+})
+$('.configuration__li').on('click', (e) => {
+    $('.configuration__li-active').removeClass('configuration__li-active');
+    $(e.currentTarget).addClass('configuration__li-active')
+    let configDivContent = $('.configuration__div_content');
+    configDivContent.children('div').remove()
+    $(e.currentTarget).children('.configuration__div_byList').clone().appendTo(configDivContent);
+    configDivContent
+    configDivContent.children('div').removeClass('displayNone')
 })
 
 function hideAll() {
