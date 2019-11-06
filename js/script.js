@@ -367,7 +367,7 @@ $('body').on('touchstart', (e) => {
         }
     })
     if (change === 0) {
-        hideAll()   
+        hideAll();
     }
 })
 $('body').on('clcik', (e) => {
